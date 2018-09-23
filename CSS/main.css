@@ -105,7 +105,7 @@ section.showcase {
   transition: 1s;
   text-align: center;
   transform: translate(-50%, -50%);
-  filter: blur(20px); }
+  filter: blur(0px); }
 
 .hero .inside-1 .hero-text1 {
   position: fixed;
@@ -124,7 +124,7 @@ section.showcase {
   transform: translate(0%, -50%);
   text-align: center;
   margin: 0;
-  filter: blur(20px);
+  filter: blur(0px);
   opacity: 0; }
 
 .hero-text2 h3 {

@@ -92,10 +92,10 @@ $(function(){
        
       
       var imgFilterOff= 'blur(0) contrast(1) grayscale(0.3) brightness(1)'
-      var imgFilterOn = 'blur(5px) contrast(1) grayscale(0.3) brightness(1)'
-      var textFilterOn= 'blur(20px)'
+      var imgFilterOn = 'blur(0px) contrast(1) grayscale(0.3) brightness(1)'
+      var textFilterOn= 'blur(0)'
       var textFilterOff= 'blur(0px)'
-      var overImgFilter= 'blur(5px) contrast(0.1) grayscale(0.5) brightness(0)'
+      var overImgFilter= 'blur(0px) contrast(0.1) grayscale(0.5) brightness(0)'
       
       
       //var wall3 = "url(../IMGS/christian-chen-735653-unsplash.jpg)"

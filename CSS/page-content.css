@@ -285,7 +285,7 @@
   padding: 100px 50px 50px 50px;
   color: white;
   background: Transparent;
-  filter: blur(20px); }
+  filter: blur(0px); }
 
 .sec1 h2 {
   color: #ea578f;
