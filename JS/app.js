@@ -302,11 +302,11 @@ $(function(){
   $(window).scroll(function(){
         if($(document).scrollTop() > window.innerHeight * 3.56){
           $('.sec3').css('opacity', '0')
-          $('.sec3').css('top', '-100vh')
+          
           $('.sec3').css('filter', textFilterOn)
           $('.phone').css('opacity', '0')
           $('.phone').css('transition', '0.5s')
-          $('.phone').css('top', '-50vh')
+          
         }
         else{
           
