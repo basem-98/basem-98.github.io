@@ -1,0 +1,46 @@
+.page-footer {
+  background: #222;
+  color: #777;
+  padding: 1% 15%; }
+
+footer p, footer a {
+  margin: 0;
+  font-size: 12px; }
+
+.footer-hr {
+  margin: 0 0 15px 0;
+  border: 0.5px solid #666; }
+
+.page-footer .col p {
+  font-weight: 600;
+  font-size: 14px;
+  color: #999; }
+
+.page-footer ul {
+  margin: 0; }
+
+.page-footer ul li a {
+  color: #777; }
+
+.hr2 {
+  margin: 15px 0; }
+
+#credits {
+  font-weight: 400;
+  color: #666;
+  font-size: 12px;
+  padding-bottom: 30px; }
+
+.sitemap a {
+  color: #777;
+  padding-right: 10px;
+  border-right: 1px solid #999; }
+
+.sitemap a:last-child {
+  border-right: none; }
+
+#sub {
+  position: relative;
+  z-index: 9000; }
+
+/*# sourceMappingURL=footer.css.map */

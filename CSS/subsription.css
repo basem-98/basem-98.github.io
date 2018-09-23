@@ -1,0 +1,200 @@
+.Subscription {
+  min-height: 100vh;
+  background: linear-gradient(140deg, #033255, #d61b62);
+  animation: grad 5s infinite ease;
+  background-size: 200% 150%; }
+
+@keyframes grad {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+.container2 {
+  width: 85%; }
+
+.appicon {
+  width: 100%;
+  padding-top: 125px; }
+
+.appicon img {
+  display: block;
+  margin: auto;
+  width: 80px; }
+
+.Subscription h2 {
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 50px; }
+
+.panel {
+  background: rgba(255, 255, 255, 0.25);
+  width: 100%;
+  padding: 10px;
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 15px;
+  height: 200px;
+  border-radius: 5px; }
+
+.panel h4 {
+  margin: 0;
+  width: 90%;
+  margin: auto;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+  background: linear-gradient(140deg, #033255, #d61b62);
+  background-size: 150% 150%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: grad 5s infinite linear;
+  filter: brightness(1.2); }
+
+.panel hr {
+  width: 90%;
+  height: 2px;
+  border: none;
+  background: linear-gradient(90deg, #033255, #d61b62);
+  outline: none; }
+
+.panel h2 {
+  margin: 10px 10px 0 10px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8); }
+
+.panel h2 span {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5); }
+
+.panel button {
+  display: block;
+  margin: auto;
+  width: 90%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 17px;
+  font-family: Montserrat;
+  background: rgba(214, 27, 98, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: white;
+  border-radius: 5px;
+  transition: 0.5s; }
+
+.panel button:hover {
+  background: #d61b62;
+  border: 1px solid #d61b62; }
+
+.panel button:active {
+  background: #2d4658;
+  border: 1px solid #2d4658; }
+
+.footnote {
+  width: 100%;
+  margin: auto;
+  padding-bottom: 10px; }
+
+.col-ls {
+  padding: 0 !important; }
+
+.info {
+  padding: 75px 0 0 0; }
+
+.lasto {
+  height: 45vh;
+  position: relative; }
+
+.lasto1 {
+  background: url("../IMGS/music/p1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.lasto2 {
+  background: url("../IMGS/music/subplay.png");
+  background-position: 50% 10%;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.lasto3 {
+  background: url("../IMGS/music/lapplaylight.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.lasto-text {
+  position: absolute;
+  width: 100%;
+  top: calc(30% - (230px/2));
+  transform: translate(0%);
+  padding: 10px; }
+
+@media (max-width: 992px) {
+  .last {
+    height: 50vh; } }
+@media (max-width: 600px) {
+  .Subscription h2 {
+    font-size: 40px; } }
+.weirdo {
+  height: 100vh;
+  background: url("../IMGS/music/subplay.png");
+  background-position: 125% 101%;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  position: relative;
+  overflow: hidden; }
+
+.weirdo1 {
+  height: 100vh;
+  background: url("../IMGS/music/p12.png");
+  background-position: -10% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative; }
+
+.weirdo2 {
+  height: 100vh;
+  background: url("../IMGS/music/lapplaylight.png");
+  background-position: 155% 50%;
+  background-repeat: no-repeat;
+  background-size: 70%;
+  position: relative; }
+
+.row {
+  margin: 0 !important; }
+
+.weirdo-text {
+  width: 50%;
+  position: absolute;
+  top: calc(50% - (275px/2));
+  padding: 10px 30px; }
+
+.weirdo-text h2, .lasto-text h2 {
+  font-weight: 600;
+  margin: 0; }
+
+.weirdo-text h3, .lasto-text h3 {
+  margin-top: -25px;
+  position: relative;
+  font-weight: 600; }
+
+.weirdo-text p, .lasto-text p {
+  font-size: 26px;
+  margin: 20px;
+  color: #646464; }
+
+.weirdo-text h2, .lasto-text h2 {
+  color: rgba(130, 130, 130, 0.2); }
+
+.weirdo1 .weirdo-text {
+  right: 0; }
+
+.weirdo-text h3, .lasto-text h3 {
+  background: -webkit-linear-gradient(135deg, #782e69 10%, #5481a2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+/*# sourceMappingURL=subsription.css.map */
