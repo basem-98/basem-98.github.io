@@ -261,8 +261,8 @@ $(function(){
           $('.sec1').css('filter', textFilterOn)
           $('.sec2').css('filter', textFilterOff)
           $('.sec2').css('opacity', '1')
-          //$('.sec1').css('top', '-100vh')
-          //$('.sec2').css('top', '50vh')
+          $('.sec1').css('top', '-100vh')
+          $('.sec2').css('top', '50vh')
           $('.ins1').css('opacity', '0')
           $('.ins2').css('opacity', '1')
           //$('.phone-inside').attr('src','IMGS/music/phoneb2.png')
@@ -271,7 +271,7 @@ $(function(){
         else{
           $('.sec2').css('filter', textFilterOn)
           $('.sec2').css('opacity', '0')
-          //$('.sec2').css('top', '100vh')
+          $('.sec2').css('top', '100vh')
           //$('.ins1').css('opacity', '1')
           $('.ins2').css('opacity', '0')
           //$('.phone-inside').attr('src','IMGS/music/phoneb1.png')
@@ -282,8 +282,8 @@ $(function(){
           $('.sec2').css('opacity', '0')
           $('.sec3').css('opacity', '1')
           $('.sec3').css('filter', textFilterOff)
-          //$('.sec3').css('top', '50vh')
-          //$('.sec2').css('top', '-100vh')
+          $('.sec3').css('top', '50vh')
+          $('.sec2').css('top', '-100vh')
           $('.ins2').css('opacity', '0')
           $('.ins3').css('opacity', '1')
           //$('.phone-inside').attr('src','IMGS/music/phoneb3.png')
@@ -293,7 +293,7 @@ $(function(){
           $('.ins3').css('opacity', '0')
           $('.sec3').css('filter', textFilterOn)
           $('.sec3').css('opacity', '0')
-          //$('.sec3').css('top', '100vh')
+          $('.sec3').css('top', '100vh')
           
         }
       })
@@ -450,7 +450,7 @@ $(function(){
     viewFactor: 0.4,
     opacity: 0,
     duration: 1500,
-    
+    reset: true
   })
   
 })
