@@ -92,10 +92,10 @@ $(function(){
        
       
       var imgFilterOff= 'blur(0) contrast(1) grayscale(0.3) brightness(1)'
-      var imgFilterOn = 'blur(0px) contrast(1) grayscale(0.3) brightness(1)'
-      var textFilterOn= 'blur(0)'
+      var imgFilterOn = 'blur(5px) contrast(1) grayscale(0.3) brightness(1)'
+      var textFilterOn= 'blur(20px)'
       var textFilterOff= 'blur(0px)'
-      var overImgFilter= 'blur(0px) contrast(0.1) grayscale(0.5) brightness(0)'
+      var overImgFilter= 'blur(5px) contrast(0.1) grayscale(0.5) brightness(0)'
       
       
       //var wall3 = "url(../IMGS/christian-chen-735653-unsplash.jpg)"
@@ -182,15 +182,9 @@ $(function(){
           
           $('.overlay-img').css('filter', overImgFilter)
           $('.textar').css('opacity', '0')
-          $('.sec1').css('display', 'block')
-          $('.sec2').css('display', 'block')
-          $('.sec3').css('display', 'block')
         }
         else{
           $('.textar').css('opacity', '0.1')
-          $('.sec1').css('display', 'none')
-          $('.sec2').css('display', 'none')
-          $('.sec3').css('display', 'none')
         }
       })
   
@@ -233,7 +227,7 @@ $(function(){
             $('.phone').css('transform', tran)
             $('.phone').css('transition', anima)
             $('.sec1').css('opacity', '1')
-            //$('.sec1').css('top', '50vh')
+            $('.sec1').css('top', '50vh')
             $('.sec1').css('filter', textFilterOff)
           }
           
@@ -244,7 +238,7 @@ $(function(){
             $('.phone').css('transform', tran)
             $('.phone').css('transition', 'opacity 0s')
             $('.sec1').css('opacity', '1')
-            //$('.sec1').css('top', '50vh')
+            $('.sec1').css('top', '50vh')
             $('.sec1').css('filter', textFilterOff)
           }
         }
@@ -256,7 +250,7 @@ $(function(){
           $('.phone').css('transform', tran2)
           $('.phone').css('transition', 'opacity 1s')
           $('.sec1').css('opacity', '0')
-          //$('.sec1').css('top', '100vh')
+          $('.sec1').css('top', '100vh')
           $('.sec1').css('filter', textFilterOn)
         }
       })
@@ -267,8 +261,8 @@ $(function(){
           $('.sec1').css('filter', textFilterOn)
           $('.sec2').css('filter', textFilterOff)
           $('.sec2').css('opacity', '1')
-          //$('.sec1').css('top', '-100vh')
-          //$('.sec2').css('top', '50vh')
+          $('.sec1').css('top', '-100vh')
+          $('.sec2').css('top', '50vh')
           $('.ins1').css('opacity', '0')
           $('.ins2').css('opacity', '1')
           //$('.phone-inside').attr('src','IMGS/music/phoneb2.png')
@@ -277,7 +271,7 @@ $(function(){
         else{
           $('.sec2').css('filter', textFilterOn)
           $('.sec2').css('opacity', '0')
-          //$('.sec2').css('top', '100vh')
+          $('.sec2').css('top', '100vh')
           //$('.ins1').css('opacity', '1')
           $('.ins2').css('opacity', '0')
           //$('.phone-inside').attr('src','IMGS/music/phoneb1.png')
@@ -288,8 +282,8 @@ $(function(){
           $('.sec2').css('opacity', '0')
           $('.sec3').css('opacity', '1')
           $('.sec3').css('filter', textFilterOff)
-          //$('.sec3').css('top', '50vh')
-          //$('.sec2').css('top', '-100vh')
+          $('.sec3').css('top', '50vh')
+          $('.sec2').css('top', '-100vh')
           $('.ins2').css('opacity', '0')
           $('.ins3').css('opacity', '1')
           //$('.phone-inside').attr('src','IMGS/music/phoneb3.png')
@@ -299,7 +293,7 @@ $(function(){
           $('.ins3').css('opacity', '0')
           $('.sec3').css('filter', textFilterOn)
           $('.sec3').css('opacity', '0')
-          //$('.sec3').css('top', '100vh')
+          $('.sec3').css('top', '100vh')
           
         }
       })
@@ -308,11 +302,11 @@ $(function(){
   $(window).scroll(function(){
         if($(document).scrollTop() > window.innerHeight * 3.56){
           $('.sec3').css('opacity', '0')
-          
+          $('.sec3').css('top', '-100vh')
           $('.sec3').css('filter', textFilterOn)
           $('.phone').css('opacity', '0')
           $('.phone').css('transition', '0.5s')
-          
+          $('.phone').css('top', '-50vh')
         }
         else{
           
@@ -456,7 +450,7 @@ $(function(){
     viewFactor: 0.4,
     opacity: 0,
     duration: 1500,
-    
+    reset: true
   })
   
 })

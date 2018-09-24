@@ -255,8 +255,7 @@
   background: #c8c8cd;
   z-index: 950;
   opacity: 0;
-  transition: 0.5s linear;
-  display: none}
+  transition: 1s; }
 
 .sec2 {
   position: fixed;
@@ -268,8 +267,7 @@
   background: #212121;
   z-index: 950;
   opacity: 0;
-  transition: 0.5s linear;
-  display: none}
+  transition: 1s; }
 
 .sec3 {
   position: fixed;
@@ -281,14 +279,13 @@
   background: #c8c814;
   z-index: 950;
   opacity: 0;
-  transition: 0.5s linear;
-  display: none}
+  transition: 1s; }
 
 .sec1, .sec2, .sec3 {
   padding: 100px 50px 50px 50px;
   color: white;
   background: Transparent;
-  filter: blur(0px); }
+  filter: blur(20px); }
 
 .sec1 h2 {
   color: #ea578f;
