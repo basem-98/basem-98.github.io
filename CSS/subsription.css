@@ -101,14 +101,15 @@
   padding: 0 !important; }
 
 .info {
-  padding: 75px 0 0 0; }
+  padding: 75px 0 0 0;
+  }
 
 .lasto {
   height: 45vh;
   position: relative; }
 
 .lasto1 {
-  background: url("../IMGS/music/p1.png");
+  background: url("../IMGS/music/p2.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
