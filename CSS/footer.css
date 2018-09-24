@@ -42,8 +42,5 @@ footer p, footer a {
 #sub {
   position: relative;
   z-index: 9000; }
-#info{
-  position: relative;
-  z-index: 9900 !important
-}
+
 /*# sourceMappingURL=footer.css.map */

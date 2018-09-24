@@ -21,7 +21,7 @@ section.showcase {
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4); }
 
 .overlay-img {
-  background: url("../IMGS/4.jpg");
+  background: url("../IMGS/gbarkz-489384-unsplash.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -35,12 +35,12 @@ section.showcase {
   transition: 1.5s;}
 
 #overlay-img.light-bg {
-  background: url("../IMGS/1.jpg");
+  background: url("../IMGS/earphones-headphones-listen-7424.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
 
-/*.overlay-img::before {
+.overlay-img::before {
   background-color: #d61b62;
   content: "";
   opacity: 1;
@@ -63,7 +63,7 @@ section.showcase {
   position: absolute;
   top: 0;
   left: 0; }
-*/
+
 
 .hero {
   width: 100%;
