@@ -1,0 +1,117 @@
+body.body-on
+  overflow: hidden
+  
+#trigger
+  position: fixed
+  z-index: 9999
+  width: 50px
+  height: 50px
+  margin-top: -6px
+  left: 15px
+  transform: scale(0.7)
+  
+#trigger .trig1
+  background: white
+  width: 90%
+  height: 3px
+  position: absolute
+  top: 35% 
+  left: 0
+  transition: 0.5s
+  box-shadow: 0 0 5px black
+  
+#trigger .trig2
+  position: absolute
+  top: 65%
+  background: white
+  width: 90%
+  height: 3px
+  position: absolute
+  left: 0
+  transition: 0.5s
+  box-shadow: 0 0 5px black
+  
+#trigger.active .trig1
+  top: 50% 
+  transform: rotate(45deg) translate(0)
+  
+#trigger.active .trig2
+  top: 50% 
+  transform: rotate(135deg) translate(0)
+  
+.sidebar
+  background: #222222
+  width: 50%
+  max-width: 400px
+  height: 100vh
+  margin: 0
+  padding: 0
+  position: fixed
+  transition: 0.5s
+  left: -50%
+  
+  z-index: 9990
+  
+#sidebar.on
+  left: 0%
+  box-shadow: 2px 0 15px black
+  
+
+#overlay
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0
+  left: -100%
+  background: rgba(0,0,0,0.5)
+  z-index: 9980
+  transition: 0.5s
+  transition-delay: 0.25s
+
+#overlay.over-on
+  left: 0%
+  
+.sidebar ul
+  margin: 0
+  position: absolute
+  top: 50%
+  left: 0
+  width: 100%
+  transform: translate(0%, -50%)
+  
+.sidebar ul li
+  text-align: center
+  padding: 15px
+  transition: 0.5s
+  transform: translate(-100%)
+
+.sidebar ul li:nth-child(1)
+  transition-delay: 0.0s
+  
+.sidebar ul li:nth-child(2)
+  transition-delay: 0.2s
+.sidebar ul li:nth-child(3)
+  transition-delay: 0.4s
+.sidebar ul li:nth-child(4)
+  transition-delay: 0.6s  
+  
+#sidebar.on ul li
+  transform: translate(0%)
+  
+.sidebar ul li a
+  font-size: 18px
+  font-weight: 600
+  color: #e2e2e2
+main
+  transition: 0.5s
+  transition-delay: 0.5s
+header
+  transition: 0.5s
+main.main-on
+  /*transform: translate(400px, 0%)*/
+  padding: 0
+  filter: grayscale(1)
+  
+/*@media (max-width: 800px)
+  main.main-on
+    transform: translate(50%, 0%)*/
