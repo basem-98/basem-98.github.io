@@ -182,9 +182,15 @@ $(function(){
           
           $('.overlay-img').css('filter', overImgFilter)
           $('.textar').css('opacity', '0')
+          $('.sec1').css('display', 'block')
+          $('.sec2').css('display', 'block')
+          $('.sec3').css('display', 'block')
         }
         else{
           $('.textar').css('opacity', '0.1')
+          $('.sec1').css('display', 'none')
+          $('.sec2').css('display', 'none')
+          $('.sec3').css('display', 'none')
         }
       })
   
@@ -227,7 +233,7 @@ $(function(){
             $('.phone').css('transform', tran)
             $('.phone').css('transition', anima)
             $('.sec1').css('opacity', '1')
-            $('.sec1').css('top', '50vh')
+            //$('.sec1').css('top', '50vh')
             $('.sec1').css('filter', textFilterOff)
           }
           
@@ -238,7 +244,7 @@ $(function(){
             $('.phone').css('transform', tran)
             $('.phone').css('transition', 'opacity 0s')
             $('.sec1').css('opacity', '1')
-            $('.sec1').css('top', '50vh')
+            //$('.sec1').css('top', '50vh')
             $('.sec1').css('filter', textFilterOff)
           }
         }
@@ -250,7 +256,7 @@ $(function(){
           $('.phone').css('transform', tran2)
           $('.phone').css('transition', 'opacity 1s')
           $('.sec1').css('opacity', '0')
-          $('.sec1').css('top', '100vh')
+          //$('.sec1').css('top', '100vh')
           $('.sec1').css('filter', textFilterOn)
         }
       })
