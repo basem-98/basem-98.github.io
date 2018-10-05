@@ -159,10 +159,17 @@ header {
   .container {
     width: 95% !important;
   }
+
+  
 }
 @media (max-width: 600px) {
   .preorder {
     margin-top: 15px;
+  }
+
+  header {
+    background-attachment: initial;
+    
   }
 
   .game-description {
