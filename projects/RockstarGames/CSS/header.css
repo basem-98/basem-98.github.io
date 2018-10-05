@@ -1,8 +1,7 @@
 header {
-  background: url(../IMGS/01.jpg);
+  background: url(../IMGS/01.jpg) no-repeat  center center fixed;
   width: 100%;
   min-height: 100vh;
-  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -167,10 +166,7 @@ header {
     margin-top: 15px;
   }
 
-  header {
-    background-attachment: initial;
-    
-  }
+  
 
   .game-description {
     display: none;
