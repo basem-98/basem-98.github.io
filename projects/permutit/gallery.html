@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ONLINE LINKS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Nunito|Roboto+Slab" rel="stylesheet">
+  
+  <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+  <!-- LOCAL LINKS -->
+  <link rel="stylesheet" href="CSS/materialize.css" media="screen,projection">
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/Gallery.css">
+  
+  <!-- META TAGS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <!-- TITLE AND BROWSER ICON -->
+  <title>Permutit Gallery</title>
+  
+  
+</head>
+<body>
+  <header>
+    <div class="navbar-fixed ">
+      <nav>
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="" class="brand-logo">Permutit</a>
+            <a href="#!" class="sidenav-trigger" data-target="mobile-nav">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Home</a></li>
+              
+              <li><a  class="active" href="gallery.html">Gallery</a></li>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <ul class="sidenav" id="mobile-nav">
+    <li><a href="index.html" >Home</a></li>
+    
+    <li><a href="gallery.html" class="active">Gallery</a></li>
+    <li><a href="login.html">Login</a></li>
+  </ul>
+  
+  <main>
+    <div class="picoftheday">
+      <div class="container potcon animated bounceIn">
+        <h5>
+          Beautiful, free photos. <br>
+          Gifted by the world’s most generous community of photographers
+        </h5>
+        <input type="search" class="input-field searchfree" placeholder=" search free high-resolution photos">
+        <p class="potext">Photo of the day <span>By</span> Emma Paillex</p> 
+      </div>
+    </div>
+    
+    <div class="gallery-container animated fadeIn">
+      <div class="row imgrow">
+        <div class="col s12 l4 m4 gallery-col">
+          <img src="IMGS/abbs-johnson-770084-unsplash.jpg" alt="" class="gallery-img materialboxed" width="100%">
+          <img src="IMGS/alwin-kroon-770163-unsplash.jpg" alt="" class="gallery-img materialboxed" width="100%">
+          <img src="IMGS/axel-holen-768034-unsplash.jpg" alt="" class="gallery-img materialboxed" width="100%">
+          <img src="IMGS/christio-pamungkas-770709-unsplash.jpg" alt="" class="gallery-img materialboxed" width="100%">
+          <img src="IMGS/courtnie-tosana-767498-unsplash.jpg" alt="" class="gallery-img materialboxed" width="100%">
+        </div>
+        <div class="col s12 m4 l4 gallery-col">
+          <img src="IMGS/echo-grid-771141-unsplash.jpg" alt="" class="gallery-img materialboxed" width="100%">
+          <img src="IMGS/dexter-fernandes-770337-unsplash%20(1).jpg" alt="" class="gallery-img materialboxed" width="100%">
+          <img src="IMGS/eberhard-grossgasteiger-767943-unsplash.jpg" alt="" class="gallery-img materialboxed" width="100%">
+          <img src="IMGS/emily-lau-770958-unsplash.jpg" alt="" class="gallery-img materialboxed" width="100%">
+          <img src="IMGS/gordon-williams-770591-unsplash.jpg" alt="" class="gallery-img materialboxed" width="100%">
+        </div>
+        <div class="col s12 m4 l4 gallery-col">
+          <img src="IMGS/guillaume-briard-770185-unsplash.jpg" alt="" class="gallery-img materialboxed" width="100%">
+          <img src="IMGS/guillaume-briard-770247-unsplash.jpg" alt="" class="gallery-img materialboxed" width="100%">
+          <img src="IMGS/luc-tribolet-770949-unsplash.jpg" alt="" class="gallery-img materialboxed" width="100%">
+          <img src="IMGS/red-hat-factory-771127-unsplash.jpg" alt="" class="gallery-img materialboxed" width="100%">
+          <img src="IMGS/valentin-wallet-770158-unsplash.jpg" alt="" class="gallery-img materialboxed" width="100%">
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  
+  
+  <footer class="page-footer center">
+    <div class="container animated slideInLeft">
+      <p class="devby">Developed by <span>POSEIDON DESIGNS </span>&copy;. 2018</p>
+      <div class="row smrow">
+        <div class="col s12 m6 offset-m3 center">
+          <div class="smicons">
+          <a href="" class="pl "><i class="fab pl fa-pinterest-p fa-2x"></i></a>          
+          <a href="" class="tl "><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="" class="il "><i class="fab  fa-instagram fa-2x"></i></a>       
+          <a href="" class="fl "><i class="fab fl fa-facebook-f fa-2x"></i></a>
+          <a href="" class="gl "><i class="fab  fa-google-plus-g fa-2x"></i></a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+  
+<!-- ---------------------- SCRIPTS SECTION --------------------------- -->  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  
+  <script src="JS/materialize.min.js"></script>
+  
+  
+  <script>
+    $(function(){
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      
+      
+      $('nav').css('background','rgb(35, 37, 38)')
+      $('nav').css('transition', '0.5s')
+      
+      $(window).scroll(function(){
+        if($(document).scrollTop() > 0){
+          $('nav').css('background','rgb(35, 37, 38)')
+          $('nav').css('box-shadow','0 2px 5px rgba(0,0,0,0.5)')
+        }
+        else{
+          $('nav').css('background','rgb(35, 37, 38)')
+          $('nav').css('box-shadow','none')
+        }
+      })
+    })
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+.picoftheday{
+  height: 400px;
+  background: linear-gradient(90deg, rgba(35, 37, 38,0.7), rgba(35, 37, 38,0.7)) ,url(../IMGS/gordon-williams-770591-unsplash.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% -150px;
+  position: relative;
+}
+
+.potcon{
+  padding: 80px 20px
+}
+
+h5{
+  margin: 20px 5px;
+  font-size: 30px;
+  color: #d4d4d4;
+  line-height: 1.25
+}
+
+.searchfree{
+  margin: 30px 20px 30px 0!important;
+  display: block !important;
+  width: 80% !important;
+  background: rgba(255,255,255, 0.35) !important;
+  padding: 5px 10px !important;
+  border-radius: 5px !important;
+  color: rgb(55,71,79);
+  font-size: 20px !important;
+  border-bottom: 2px solid rgb(35, 37, 38)!important
+}
+
+.searchfree:focus{
+  border-bottom: 3px solid rgb(209, 166, 73) !important;
+  box-shadow: none !important
+}
+
+::placeholder{
+  color: rgb(35, 37, 38);
+  transition: 0.5s
+}
+
+input:focus::-webkit-input-placeholder{
+  opacity: 0;
+}
+
+.potext{
+  /* margin-top: 75px; */
+  color: #d4d4d4;
+  position: absolute;
+  margin: 0;
+  top:375px;
+  left: 10px;
+}
+.potext span{
+  color: rgb(209, 166, 73)
+}
+/*imgsssss*/
+.gallery-col{
+  padding: 0 !important
+}
+
+
+
+/*------------------------------------------*/
+/*.gallery-container{
+  width: 100%;
+  margin: auto;
+  animation-duration: 3s
+}
+
+
+
+.gallery-img{
+  width: 100%;
+  display: block;
+/*   filter: contrast(50%) brightness(80%);
+  transition: 0.5s */
+/*}*/
+
+.materialboxed{
+  filter: grayscale(100%) brightness(50%);
+  transition: 0.5s ease-out
+}
+.materialboxed:hover{
+  filter: grayscale(0%) brightness(100%);
+  opacity: 1;
+}
+.materialboxed.active{
+  filter: grayscale(0%)
+}
+
+
+.page-footer{
+  background: linear-gradient(90deg, rgba(35, 37, 38,1), rgba(35, 37, 38,1)), url(../IMGS/axel-holen-768034-unsplash.jpg);
+  background-position: 50% 80px;
+  background-attachment:fixed;
+  background-size: cover;
+}
+.imgrow{
+  margin: 0;
+}
+/*------------------------------------------*/
+@media (max-width:700px){
+  .searchfree{
+    width: 90% !important;
+    margin:30px auto !important;
+  }
+  .potcon{
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 600px){
+  .gallery-img{
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    width: 80%;
+    margin: auto;
+    margin-bottom:15px;
+  }
+}
+@media (max-width: 450px){
+  h5{
+    font-size: 24px;
+  }
+  .picoftheday{
+    background-position: 50%;
+  }
+
+  .gallery-img{
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    width: 90%;
+    margin: auto;
+    margin-bottom:15px;
+  }
+  
+  /* .potext{
+    margin-top: 50px
+  } */
+}

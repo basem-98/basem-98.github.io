@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arimo|Fira+Sans|Muli" rel="stylesheet">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Pacifico|Permanent+Marker" rel="stylesheet">
+  
+  
+  <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+  <!-- LOCAL LINKS -->
+  
+  <link rel="stylesheet" href="CSS/materialize.css" media="screen,projection">
+  <link rel="stylesheet" href="CSS/animate.css">
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/login2.css">
+  <link rel="stylesheet" href="CSS/OverlayScrollbars.min.css">
+  <!-- META TAGS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <!-- TITLE AND BROWSER ICON -->
+  <title>PEGASUS Tours | Login</title>
+</head>
+<body>
+ 
+  <header>
+    <div  class=" navbar-fixed" >
+      <nav class="mynav">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="" class="brand-logo center"> PEGASUS</a>
+            
+            <a href="#!" class="sidenav-trigger" data-target="mobile-nav">
+              <i class="material-icons burger">menu</i>
+            </a>
+            
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+  </header>
+  
+
+  
+  
+  <main>
+      <ul class="sidenav" id="mobile-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+      
+      <div class="slider fullscreen">
+        <ul class="slides">
+          <li>
+          <img src="imgs/blr1.jpg">
+          <div class="half-overlay over1"></div>
+          </li>
+          <li>
+          <img src="imgs/blr2.jpg">
+          <div class="half-overlay over2"></div>
+          </li>
+          <li>
+          <img src="imgs/blr3.jpg">
+          <div class="half-overlay over3"></div>
+          </li>
+          <li>
+          <img src="imgs/blr4.jpg">
+          <div class="half-overlay over4"></div>
+          </li>
+          <li>
+          <img src="imgs/blr5.jpg">
+          <div class="half-overlay over5"></div>
+          </li>
+        </ul>
+      </div>
+      <!-- MAINNNNNNNNNNNNN -->
+      <div class="half-overlay"></div>
+      
+      
+      
+      <div class="log-form-container">
+        <div class="select-form">
+          <div class="login" id="login">
+          <div class="login-white-over "></div>
+          <p>Login</p>
+        </div>
+        <div class="signup" id="signup">
+          <div class="signup-white-over"></div>
+          <p>Sign Up</p>
+        </div>
+        </div>
+        <div class="form">
+          
+          
+          <div class="texta text1">
+          <form action="" class="login-form">
+            <!-- <div class="lockbox">
+              <i class="fas userac fa-user fa-6x"></i>
+            </div> -->
+            <input type="text" class="intbox" placeholder="Username">
+            <input type="password" class="intbox" placeholder="password">
+            <a href="">Forgot Password?</a>            
+            <button class="button logbtn waves-effect waves-light">Login</button>
+            <div class="or">
+              <hr class="hr1">
+              <p>or</p>
+              <hr class="hr2">
+            </div>
+            <button class="button fbbtn waves-effect waves-light"> <div class="smlog"></div> <i class="fab sm  fa-facebook-f fa-2x"></i>   <p>Connect with Facebook</p></button>
+            <button class="button tbtn waves-effect waves-light"><div class="smlog"></div> <i class="fab fa-2x sm fa-twitter"></i>  <p>Connect With Twitter</p></button>
+            <button class="button gbtn waves-effect waves-light"><div class="smlog"></div> <i class="fab sm fa-2x fa-google-plus-g"></i> <p>Connect With Google</p></button>
+          </form>
+        </div>
+        <div class="texta text2">
+          
+          <form action="" class="login-form">
+            <!-- <div class="lockbox">
+              <i class="fas userac fa-user fa-6x"></i>
+            </div> -->
+            <h3><span>Sign-Up</span> For Free</h3>
+            <input type="text" class="intbox int2" placeholder="First Name">
+            <input type="text" class="intbox int2" placeholder="Last Name">
+            <input type="text" class="intbox" placeholder="E-Mail Address">
+            <input type="text" class="intbox" placeholder="Password">
+            <input type="text" class="intbox" placeholder="Confirm Password">
+            
+            <button class="button logbtn waves-effect waves-light"><p>Get Started</p></button>
+            
+          </form>
+          
+        </div>
+          
+          
+        </div>
+      </div>
+      
+      <!--<div class="foot">
+        Developed By <span>POSEIDON Designs</span>.
+      </div> -->
+
+  </main>
+  
+
+  
+
+<!-- ################ SCRIPT SECTION ############## -->  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  
+  <script src="JS/materialize.min.js"></script>
+  <script src="JS/OverlayScrollbars.min.js"></script>
+  <script>
+    $(function(){
+      $('body').overlayScrollbars({ });
+      $('.sidenav').sidenav();
+      $('.slider').slider({
+        interval: 5000
+      });
+      
+      //var loginout = 'translate(-100%,-50%)'
+      //var login  = 'translate(0%,-50%)'
+      //var signup = 'translate(0%,-50%)'
+      //var signupout = 'translate(100%,-50%)'
+      
+      var loginout = 'translate(0%,200%)'
+      var login  = 'translate(0%,-50%)'
+      var signup = 'translate(0%,-50%)'
+      var signupout = 'translate(0%,-200%)'
+      
+      $('#signup').on('click', function(){
+        $('.text2').css('transform', signup)
+        $('.text1').css('transform', loginout)
+        $('.signup-white-over').css('top','00px')
+        $('.login-white-over').css('top','80px')
+        $('.login').css('color','white')
+        $('.signup').css('color','black')
+
+      })
+      
+      $('#login').on('click', function(){
+        $('.text1').css('transform', login)
+        $('.text2').css('transform', signupout)
+        $('.signup-white-over').css('top','80px')
+        $('.login-white-over').css('top','00px')
+        $('.login').css('color','black')
+        $('.signup').css('color','white')
+
+      })
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      $('.mynav').css('background','rgba(0,0,0,0)');
+      $('.mynav').css('box-shadow','none');
+      $('.mynav').css('transition','0.5s');
+      $('.hoverdrop').css('opacity','1');      
+      $('.hoverdrop').css('transition','0.5s');
+      
+      $(window).scroll(function(){
+        if($(document).scrollTop() > $(window).height() * 0.65){
+          $('.mynav').css('background','rgba(37,41,48,1)');
+          $('.mynav').css('box-shadow','0 2px 5px black');
+        }
+        else{
+          $('.mynav').css('background','rgba(37,41,48,0)');
+          $('.mynav').css('box-shadow','none');
+        }
+      })
+      
+      
+      $(window).scroll(function(){
+        if($(document).scrollTop() > 0){
+          $('.mob').css('opacity','0');
+          $('.navigation').css('opacity','0')
+        }
+        else{
+          $('.mob').css('opacity','1');
+          $('.navigation').css('opacity','1');
+        }
+      })
+    })
+  </script>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

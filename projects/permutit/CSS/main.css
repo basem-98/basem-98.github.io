@@ -1,0 +1,175 @@
+/*MAIN DEFAULTS*/
+body {
+  font-family: Roboto Slab;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: /*rgb(50, 67, 80)*/ rgb(35, 37, 38)  /*rgb(69, 103, 137)*/
+}
+.container{
+  width: 85%;
+}
+main {
+  flex: 1 0 auto;
+  overflow: hidden; 
+}
+
+/*Nav BAR STUFF*/
+nav {
+  background: transparent;
+  box-shadow: none; 
+}
+
+nav .brand-logo{
+  text-transform: uppercase;
+  font-weight: 900;
+  color:  rgb(209, 166, 73);
+  font-size: 35px;
+  letter-spacing: 20px;
+  margin-left: 20px;
+}
+nav .material-icons{
+  font-size: 35px !important;
+  color: #d4d4d4;
+}
+
+
+nav li a {
+  color: #d4d4d4;
+  font-weight: 400;
+  height: 64px;
+  transition: 0.25s;
+  font-size: 16px;
+  border-bottom: 0px solid #607d8b
+}
+
+nav li a.active{
+  background: rgba(255,255,255,0);
+  border-bottom: 5px solid rgb(209, 166, 73)
+}
+
+nav li a:hover{
+  border-bottom: 5px solid rgb(209, 166, 73);
+  background: rgba(255,255,255,0)
+}
+/*sidenav*/
+.sidenav{
+  background: rgba(35, 37, 38,0.7);
+  padding-top: 40vh;
+  width: 50%;
+  min-width: 250px;
+  max-width: 300px;
+}
+.sidenav li a{
+  text-align: center;
+  color: #d4d4d4;
+  font-size: 17px;
+  width: 50%;
+  margin: auto;
+  border-bottom: 0px solid rgba(209, 166, 73,0);
+  transition: 0.25s;
+  
+}
+.sidenav li a.active{
+  border-bottom: 5px solid rgba(209, 166, 73,0.4)
+}
+.sidenav li a:hover{
+  border-bottom: 5px solid rgba(209, 166, 73,0.4);
+  background: transparent;
+}
+/* FOOTER */
+
+
+.page-footer p{
+  margin: 0 0 5px 0;
+  font-size: 20px;
+  color: #d4d4d4
+}
+.page-footer span{
+  color: rgb(209, 166, 73)
+}
+.page-footer a {
+  color: #b0bec5;
+  width: 48px;
+  padding: 10px;
+  transition: 0.5s
+}
+a.fl:hover{
+    color: #3b5998;
+}
+a.tl:hover{
+    color: #00aced
+}
+a.il:hover{
+    color: #a32465
+}
+a.gl:hover{
+    color: #d34836
+}
+a.pl:hover{
+    color: #c92228
+}
+
+/* Media QUERIES */
+
+
+
+
+@media (max-width: 700px){
+  .container{
+    width: 100%;
+  }
+}
+@media (max-width:550px){
+  nav a.brand-logo{
+    letter-spacing: 10px;
+    margin-left:10px;
+  }
+  .mainh1{
+    letter-spacing: 8px !important;
+    margin-left:8px !important;
+    font-size: 35px;
+  }
+  .mainbtn{
+    width: 70%;
+  }
+}
+@media (max-width:400px){
+  nav a.brand-logo{
+    letter-spacing: 2px;
+    margin-right: 2px;
+  }
+  nav .material-icons{
+    font-size: 30px !important;
+  }
+  header {
+    background-position: 50% 0px !important ;
+  }
+  .page-footer p{
+    font-size: 16px;
+  }
+  .mainbtn{
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width:350px){
+  .main-heading{
+    margin-top: 5px;
+    padding-top: 5px;
+  }
+  .mainh1{
+    margin-top: 10px;
+    font-size: 30px;
+  }
+  .mainh4{
+    font-size: 25px;
+  }
+  .mainh6{
+    font-size: 14px;
+  }
+  .mainbtn{
+    width: 100%;
+    font-size: 12px !important;
+  }
+}

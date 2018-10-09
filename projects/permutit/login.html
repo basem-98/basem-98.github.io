@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ONLINE LINKS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Nunito|Roboto+Slab" rel="stylesheet">
+  
+  <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+  <!-- LOCAL LINKS -->
+  <link rel="stylesheet" href="CSS/materialize.css" media="screen,projection">
+  <link rel="stylesheet" href="CSS/main.css">
+  <link rel="stylesheet" href="CSS/login.css">
+  
+  <!-- META TAGS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <!-- TITLE AND BROWSER ICON -->
+  <title>Permutit Gallery</title>
+  
+  
+</head>
+<body>
+  <header>
+    <div class="navbar-fixed animated slideInDown">
+      <nav class="">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="" class="brand-logo">Permutit</a>
+            <a href="#!" class="sidenav-trigger" data-target="mobile-nav">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a  href="index.html">Home</a></li>
+          
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a class="active" href="login.html">Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <ul class="sidenav" id="mobile-nav">
+    <li><a href="index.html" >Home</a></li>
+  
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a class="active" href="login.html">Login</a></li>
+  </ul>
+  <div class="overlay"></div>
+  <main>
+    <div class="slider fullscreen">
+      <ul class="slides">
+        <li><img src="IMGS/blr2.jpg" alt=""></li>
+        <li><img src="IMGS/blr3.jpg" alt=""></li>
+        <li><img src="IMGS/blr1.jpg" alt=""></li>
+        <li><img src="IMGS/blr4.jpg" alt=""></li>
+      </ul>
+    </div>
+    <div class="log-form-container animated fadeIn">
+      <div class="toplogo">
+        <i class="material-icons medium">lock</i>
+      </div>
+      <form class="myform center">
+          <input type="text" placeholder="E-Mail">
+          <input type="password" placeholder="Password">
+          <p class="clickhere">forgot Password? <a href="">Click Here!</a></p>
+          <button class="btn-large login-btn"> Login </button>
+        </form>
+    </div>
+  </main>
+  
+  
+  
+  <footer class="page-footer center">
+    <div class="container  animated slideInLeft">
+      <p class="devby">Developed by <span>POSEIDON DESIGNS </span>&copy;. 2018</p>
+      <div class="row smrow">
+        <div class="col s12 m6 offset-m3 center">
+          <div class="smicons">
+          <a href="" class="pl "><i class="fab pl fa-pinterest-p fa-2x"></i></a>          
+          <a href="" class="tl "><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="" class="il "><i class="fab  fa-instagram fa-2x"></i></a>       
+          <a href="" class="fl "><i class="fab fl fa-facebook-f fa-2x"></i></a>
+          <a href="" class="gl "><i class="fab  fa-google-plus-g fa-2x"></i></a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+  
+<!-- ---------------------- SCRIPTS SECTION --------------------------- -->  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  
+  <script src="JS/materialize.min.js"></script>
+  
+  
+  <script>
+    $(function(){
+      $('.sidenav').sidenav()
+      $('.slider').slider()
+      
+      
+      $('nav').css('background','transparent')
+      $('nav').css('transition', '0.5s')
+      
+      $(window).scroll(function(){
+        if($(document).scrollTop() > 0){
+          $('nav').css('background','rgb(50, 67, 80)')
+          $('nav').css('box-shadow','0 2px 5px rgba(0,0,0,0.5)')
+        }
+        else{
+          $('nav').css('background','transparent')
+          $('nav').css('box-shadow','none')
+        }
+      })
+    })
+    
+  </script>
+</body>
+</html>

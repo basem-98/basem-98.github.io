@@ -1,0 +1,120 @@
+/*header Stuff*/
+
+header {
+  height: 65vh;
+  min-height: 600px;
+  background: linear-gradient(90deg, rgba(35, 37, 38,0.8), rgba(35, 37, 38,0.8)), url(../IMGS/axel-holen-768034-unsplash.jpg);
+  background-attachment: fixed;
+  background-position: 50% -100px;
+  background-size: cover
+  
+}
+
+/*MAIN HEADING*/
+
+.main-heading{
+  height: 85%;
+  padding: 20px 10px;
+  margin-top: 20px;
+}
+
+.mainh1{
+  color: #d4d4d4;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  letter-spacing: 25px;
+  font-weight: 600;
+  margin-left:25px
+}
+.mainh4{
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-left:10px;
+  color: rgb(		209, 166, 73	
+)
+}
+.mainh6{
+  margin: 5px;
+  color: #FCEFF0;
+  letter-spacing: 5px;
+  margin-left:5px;
+  text-transform: uppercase;
+}
+.mainhr{
+  margin-bottom: 0;
+  height: 2.5px;
+  border: none;
+  background: linear-gradient(90deg,
+  rgba(91, 189, 211,0),
+  rgba(		209, 166, 73	
+),
+  rgba(91, 189, 211,0))
+}
+.maintext{
+  margin-top: 10px;
+  color: #FCFCFC
+}
+
+.mainbtn{
+  background: rgba(		209, 166, 73	
+);
+  padding: 0px 60px;
+  margin: 5px 5px;
+  font-size: 20px;
+  font-family: roboto slab;
+  transition: 0.5s
+}
+
+.mainbtn:hover{
+  background: rgba(		209, 166, 73	
+);
+}
+.mainbtn:focus{
+  background: rgba(		209, 166, 73	
+);
+}
+.mainbtn2{
+  border: 1px solid rgb(		209, 166, 73	
+);
+  background: transparent
+}
+
+/* ABOUT CARD*/
+.container h2{
+  font-size: 60px;
+  color: #d4d4d4;
+  text-transform: uppercase
+}
+.about-card{
+  background: rgba(0,0,0,0.2)
+}
+
+.about-card .card-image{
+  padding: 25px 10px;
+  color: rgb(		253, 217, 138	
+)
+}
+
+.about-card .card-content{
+  color: #d4d4d4
+}
+
+
+/*footer*/
+.page-footer{
+  background: linear-gradient(90deg, rgba(35, 37, 38,0.8), rgba(35, 37, 38,0.8)), url(../IMGS/axel-holen-768034-unsplash.jpg);
+  background-position: 50% 80px;
+  background-attachment:fixed;
+  background-size: cover;
+  
+}
+.crd1{
+  animation-delay: 0.15s;
+}
+.crd2{
+  animation-delay: 0.3s;
+}
+.crd3{
+  animation-delay: 0.45s;
+}
